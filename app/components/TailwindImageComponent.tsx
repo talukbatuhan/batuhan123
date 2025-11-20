@@ -28,7 +28,7 @@ const TailwindImageComponent: React.FC<TailwindImageProps> = ({ imageSrc, imageA
           src={imageSrc}
           alt={imageAlt}
           layout="fill" // Kapsayıcıyı doldur
-          objectFit="cover" // Resmi keserek sığdır
+          objectFit="contain" // Resmi keserek sığdır
           className="rounded-md" // Tailwind sınıfları doğrudan Image bileşenine de uygulanabilir
           priority // Yüksek öncelikli yükleme
         />

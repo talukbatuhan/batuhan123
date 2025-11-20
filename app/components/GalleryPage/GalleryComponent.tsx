@@ -27,7 +27,7 @@ const GalleryComponent: React.FC = () => {
                                 alt={item.alt}
                                 // ÖNEMLİ: Yerel dosyalarınızın public/ klasöründe olduğundan emin olun!
                                 layout="fill" // Kapsayıcı div'i doldurur
-                                objectFit="cover" // Görseli kırparak kapsayıcıya sığdırır
+                                objectFit="contain" // Görseli kırparak kapsayıcıya sığdırır
                                 className="transition duration-300 group-hover:opacity-90"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 loading="lazy" // Gecikmeli yükleme
