@@ -1,6 +1,7 @@
 import React from "react";
 import VideoPlayer from "@/app/components/Video"; // Doğru yolu belirttiğinden emin ol
-import YouTubePlayer from "./components/YoutubePlayer";
+import YouTubePlayer from "./components/Gallery/YoutubePlayer";
+import GalleryApp from "./components/Gallery/GalleryApp";
 
 // Örnek bir video URL'si (Gerçek bir URL ile değiştirin!)
 const SAMPLE_VIDEO_URL = "/314643_small.mp4";
@@ -41,6 +42,10 @@ const App: React.FC = () => {
             // İsteğe bağlı: Oynatıcıya ek bir kenarlık veya gölge ekleyebiliriz
             className="border-8 border-indigo-500 hover:border-indigo-700 transition-all"
           />
+        </div>
+
+        <div>
+          <GalleryApp />
         </div>
       </section>
     </div>
